@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install X11
+      uses: apt install libxkbcommon-x11-0
+
     - name: Check out the code
       uses: actions/checkout@v3
 
